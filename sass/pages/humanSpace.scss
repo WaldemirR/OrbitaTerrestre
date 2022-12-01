@@ -1,0 +1,194 @@
+// 1. Faremos as esilizações de todos os containers
+
+.container00 {
+    &.container08 {
+        background-image: url(../img/humanFlight/humanFlight/01.jpg);
+    }
+
+    &.container09 {
+        background-image: url(../img/humanFlight/humanFlight/02.jpg);
+    }
+
+    &.container10 {
+        background-image: url(../img/humanFlight/humanFlight/03.jpg);
+    }
+
+    &.container11 {
+        background-image: url(../img/humanFlight/humanFlight/04.jpg);
+    }
+
+    &.container12 {
+        background-image: url(../img/humanFlight/humanFlight/05.jpg);
+    }
+    
+}
+
+
+
+// 2. Agora faremos do container01Content, que com ele nós faremos a estilização do texto do container01 da página human
+
+.container01Content {
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+
+    .titleHuman{
+        font-size: 120px;
+        height: 300px;
+    }
+    .subTitleHuman {
+        margin-top: 30px;
+        margin-bottom: 80px;
+        font-size: 30px;
+        font-weight: 300;
+    }
+
+    img {
+        width: 130px;
+    }
+
+    
+}
+
+
+// 3. Agora faremos da descrição da terra
+
+.earthDesc {
+    background-color: black;
+    height: 25vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    p {
+        color: $table-item;
+        font-weight: 400;
+        font-size: 20px;
+        width: 800px;
+    }
+
+    a {
+        text-decoration: none;
+        color: white;
+        font-weight: 500;
+    }
+}
+
+
+// 4. Agora faremos a estilização de todos os conteúdos que vão ficar na direita da página
+
+.containerRigthContent {
+    margin-left: 55%;
+    padding-top: 15%;
+}
+
+
+// 5. Mexeremos agora na classe title e também de subtitle
+
+.titleSection {
+    font-size: 60px;
+    font-weight: bold;
+}
+
+
+.subTitle {
+    font-weight: 300;
+    margin-bottom: 40px;
+}
+
+
+// 6. Por último faremos a manipulação dos conteúdos da parte left
+
+.containerLeftContent {
+    margin-left: 5%;
+    padding-top: 15%;
+}
+
+
+// 7. Faremos agora a manipulação de conteúdos nos mediaQuery 1024
+
+@media (max-width: 1024px) {
+    .container01Content {
+        h1 {
+            font-size: 150px;
+        }
+
+        p {
+            margin: 20px 0px;
+            font-size: 70px;
+            font-weight: 300;
+        }
+    }
+
+    .containerRigthContent {
+        margin-left: 50%;
+        padding-top: 20%;
+    }
+
+    .titleSection {
+        font-size: 50px;
+        font-weight: bold;
+    }
+
+    .subTitle {
+        font-weight: 300;
+        margin-bottom: 40px;
+    }
+
+    .containerLeftContent {
+        margin-left: 5%;
+        padding-top: 20%;
+    }
+}
+
+
+// 8. Faremos agora a manipulação de conteúdos nos mediaQuery 425
+
+@media (max-width: 425px) {
+    .container01Content {
+        h1 {
+            font-size: 40px;
+        }
+
+        p {
+            font-size: 16px;
+        }
+    }
+
+    .arrowDown {
+        display: none;
+    }
+
+    .eartDesc {
+        height: 30vh;
+
+        p {
+            color: $table-item;
+            font-weight: 400;
+            font-size: 14px;
+            width: auto;
+        }
+    }
+
+    .containerRigthContent {
+        margin-left: 20%;
+        padding-top: 30%;
+    }
+
+    .titleSection {
+        font-size: 50px;
+        font-weight: bold;
+    }
+
+    .subTitle {
+        font-weight: 300;
+        margin-bottom: 40px;
+    }
+
+    .containerLeftContent {
+        margin-left: 7%;
+        padding-top: 30%;
+    }
+}
